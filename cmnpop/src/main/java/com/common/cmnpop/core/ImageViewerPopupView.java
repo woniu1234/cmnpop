@@ -498,7 +498,8 @@ public class ImageViewerPopupView extends BasePopupView implements OnDragChangeL
                     , progressBar);
 
             //3. add View
-            LayoutParams layoutParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, XPopupUtils.dp2px(container.getContext(), 500f));
+            LayoutParams layoutParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                    XPopupUtils.dp2px(container.getContext(), (float) (0.8 * XPopupUtils.getScreenHeight(getContext()))));
             layoutParams.gravity = Gravity.CENTER_VERTICAL;
             fl.addView(view, layoutParams);
 
