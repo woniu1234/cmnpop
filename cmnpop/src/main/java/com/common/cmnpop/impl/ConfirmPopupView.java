@@ -86,8 +86,8 @@ public class ConfirmPopupView extends CenterPopupView implements View.OnClickLis
         super.applyLightTheme();
         tv_title.setTextColor(getResources().getColor(R.color._xpopup_content_color));
         tv_content.setTextColor(getResources().getColor(R.color._xpopup_content_color));
-        tv_cancel.setTextColor(Color.parseColor("#666666"));
-        tv_confirm.setTextColor(XPopup.getPrimaryColor());
+        tv_cancel.setTextColor(popupInfo.cancelColor);
+        tv_confirm.setTextColor(popupInfo.confirmColor);
         if (divider1 != null)
             divider1.setBackgroundColor(getResources().getColor(R.color._xpopup_list_divider));
         if (divider2 != null)

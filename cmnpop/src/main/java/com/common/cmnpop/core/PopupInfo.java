@@ -1,5 +1,6 @@
 package com.common.cmnpop.core;
 
+import android.graphics.Color;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.view.View;
@@ -63,6 +64,12 @@ public class PopupInfo {
     public int statusBarBgColor = 0; //状态栏阴影颜色，对Drawer弹窗和全屏弹窗有效
     public ArrayList<Rect> notDismissWhenTouchInArea; //当触摸在这个区域时，不消失
     public Lifecycle hostLifecycle; //自定义的宿主生命周期
+
+    public int confirmColor = Color.parseColor("#121212");
+
+    public int cancelColor = Color.parseColor("#666666");
+
+    public int itemColor = Color.parseColor("#222222");
 
     public Rect getAtViewRect() {
         int[] locations = new int[2];

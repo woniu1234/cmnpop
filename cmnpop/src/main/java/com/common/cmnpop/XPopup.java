@@ -175,7 +175,7 @@ public class XPopup {
 
     public static class Builder {
         private final PopupInfo popupInfo = new PopupInfo();
-        private Context context;
+        private final Context context;
 
         public Builder(Context context) {
             this.context = context;
@@ -706,6 +706,21 @@ public class XPopup {
          */
         public Builder setPopupCallback(XPopupCallback xPopupCallback) {
             this.popupInfo.xPopupCallback = xPopupCallback;
+            return this;
+        }
+
+        public Builder setConfirmColor(int confirmColor) {
+            this.popupInfo.confirmColor = confirmColor;
+            return this;
+        }
+
+        public Builder setItemColor(int itemColor) {
+            this.popupInfo.itemColor = itemColor;
+            return this;
+        }
+
+        public Builder setCancelColor(int cancelColor) {
+            this.popupInfo.cancelColor = cancelColor;
             return this;
         }
 

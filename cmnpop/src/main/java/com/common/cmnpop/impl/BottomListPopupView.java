@@ -112,14 +112,14 @@ public class BottomListPopupView extends BottomPopupView {
                     if (popupInfo.isDarkTheme) {
                         holder.<TextView>getView(R.id.tv_text).setTextColor(getResources().getColor(R.color._xpopup_white_color));
                     } else {
-                        holder.<TextView>getView(R.id.tv_text).setTextColor(getResources().getColor(R.color._xpopup_dark_color));
+                        holder.<TextView>getView(R.id.tv_text).setTextColor(popupInfo.itemColor);
                     }
                 }
             }
         };
         adapter.setOnItemClickListener(new MultiItemTypeAdapter.SimpleOnItemClickListener() {
             @Override
-            public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
+            public void onItemClick(@NonNull View view, @NonNull RecyclerView.ViewHolder holder, int position) {
                 if (selectListener != null) {
                     selectListener.onSelect(position, adapter.getData().get(position));
                 }

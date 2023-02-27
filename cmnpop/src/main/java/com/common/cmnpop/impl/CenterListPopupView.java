@@ -97,7 +97,7 @@ public class CenterListPopupView extends CenterPopupView {
                     if (popupInfo.isDarkTheme) {
                         holder.<TextView>getView(R.id.tv_text).setTextColor(getResources().getColor(R.color._xpopup_white_color));
                     } else {
-                        holder.<TextView>getView(R.id.tv_text).setTextColor(getResources().getColor(R.color._xpopup_dark_color));
+                        holder.<TextView>getView(R.id.tv_text).setTextColor(popupInfo.itemColor);
                     }
                 }
             }

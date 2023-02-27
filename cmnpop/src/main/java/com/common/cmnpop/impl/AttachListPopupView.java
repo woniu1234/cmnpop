@@ -72,7 +72,7 @@ public class AttachListPopupView extends AttachPopupView {
                     if (popupInfo.isDarkTheme) {
                         holder.<TextView>getView(R.id.tv_text).setTextColor(getResources().getColor(R.color._xpopup_white_color));
                     } else {
-                        holder.<TextView>getView(R.id.tv_text).setTextColor(getResources().getColor(R.color._xpopup_dark_color));
+                        holder.<TextView>getView(R.id.tv_text).setTextColor(popupInfo.itemColor);
                     }
                     LinearLayout linearLayout = holder.getView(R.id._ll_temp);
                     linearLayout.setGravity(contentGravity);
