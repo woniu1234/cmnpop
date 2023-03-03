@@ -11,10 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingStart="25dp"
-        android:paddingTop="13dp"
-        android:paddingEnd="25dp"
-        android:paddingBottom="13dp">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/iv_image"
@@ -29,7 +26,7 @@
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="@color/_xpopup_title_color"
-            android:textSize="15sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 </LinearLayout>
